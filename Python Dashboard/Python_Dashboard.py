@@ -69,6 +69,10 @@ st.plotly_chart(px.bar(chart_data, x='month', y=actions,
              labels={'variable':'action', 'value':'count'}, 
              barmode='group', title='**Double Click To Reset Graph').update_layout(xaxis={'categoryorder': 'array'}))
 
+st.plotly_chart(px.line(chart_data, x='month', y=actions, 
+             labels={'variable':'action', 'value':'count'}, 
+              title='**Double Click To Reset Graph').update_layout(xaxis={'categoryorder': 'array'}))
+
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
